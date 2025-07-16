@@ -39,5 +39,7 @@ command -v ascli >/dev/null 2>&1 && {
   # running on Heroku. I assume Aspera will fix their downloads shortly, but we
   # probably at least want to keep some records around in case this happens
   # again.
-  HOME="$BUILD_DIR" ascli conf ascp install --sdk-url=https://op-aspera-sdk.s3.us-east-1.amazonaws.com/ibm-aspera-transfer-sdk-linux-amd64-1.1.5.tar.gz
+  # To use our backup again set:
+  # --sdk-url=https://op-aspera-sdk.s3.us-east-1.amazonaws.com/ibm-aspera-transfer-sdk-linux-amd64-1.1.5.tar.gz
+  HOME="$BUILD_DIR" ascli conf ascp install
 }
